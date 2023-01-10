@@ -17,7 +17,6 @@ Password:- admin
     Step 3) set the model to the your App / View / control level.<br>
     
   <p>After completing 3 step you need to binding(for connection).</p>
-  <br>
   <hr>
     
 
