@@ -1,0 +1,31 @@
+<mvc:View controllerName="Practicez3_JSONModels.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:table="sap.ui.table">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+						<Label class="t1" text="Please fill the form"></Label>
+					<form:SimpleForm>
+						<form:content>
+							<Label text="Student Name" ></Label>
+							<Input id="sName" value="{/studentName/sName}"></Input>
+							
+							<Label text="Student Age"></Label>
+							<Input id="sAge" value="{studAge>/studentAge/sAge}"></Input>
+							
+							<Label text="Student Gender"></Label>
+							<Input id="sGender" value="{studGender>/studentGender/sGender}"></Input>
+							
+							<Label text="Student Class"></Label>
+							<Input id="sClass" value="{studClass>/studentClass/sClass}" ></Input>
+							
+							<Button text="Submit" id="btn" press="onBtnClick"></Button>
+						</form:content>
+					</form:SimpleForm>
+				
+				
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
