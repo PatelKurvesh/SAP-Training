@@ -1,6 +1,7 @@
 # SAP-Training
 SAP Training 
 <br>
+<b>Notes :-</b>https://docs.google.com/document/d/e/2PACX-1vQzjaQH2LiuQHdW9jRtGKVn3z_GNJMCMWM2depEuOQGbBwSL0-IUrFbUC_O2GkdYXeTyJOTBQLy3Kwp/pub 
 <hr>
 <b>-->z1_Login :-</b> 
     <p>In this login page, if the user enters correct information, then they can log in successfully, otherwise an error message is displayed.</p>
