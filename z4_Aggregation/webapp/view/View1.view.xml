@@ -1,0 +1,59 @@
+<mvc:View controllerName="Practicez4_Aggregation.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:table="sap.ui.table">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					
+					<table:Table rows="{/StudentData}">
+						<table:columns>
+							
+							<table:Column>
+								<Label text="Enrollment Number"></Label>
+								<table:template>
+									<Input value="{ENo}"></Input>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Student Name"></Label>
+								<table:template>
+									<Text text="{sName}"></Text>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Branch"></Label>
+								<table:template>
+									<Input value="{sBranch}"></Input>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="CGPA"></Label>
+								<table:template>
+									<Input value="{sCGPA}"></Input>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Pass / Fail"></Label>
+								<table:template>
+									<CheckBox selected="{sStatus}" ></CheckBox>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Placement"></Label>
+								<table:template>
+									<Label text="{sPlacement}"></Label>
+								</table:template>
+							</table:Column>
+							
+						</table:columns>
+					</table:Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
