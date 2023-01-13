@@ -31,6 +31,12 @@ Password:- admin
   1. Column Aggregation. <br>
   2. Row Aggregation.
 <hr>
+<b>-->z5_Expression_binding :-</b>
+  <p>If you want to bind the value to the control on some condition or expression is called expression binding.</p>
+  <p>Expression binding is a complex binding</p>
+  <p>for complex binding you need to define in index.html <br>
+  data-sap-ui-xx-bindingSyntax="complex"</p>
+<hr>
 
 
 
