@@ -30,7 +30,7 @@ Password:- admin
   <p>There are mainly two Aggregation</p>
   1. Column Aggregation. <br>
   2. Row Aggregation.
-    
+<hr>
 
 
 
