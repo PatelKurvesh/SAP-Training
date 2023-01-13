@@ -24,6 +24,12 @@ Password:- admin
 <b>-->z3_JSONModels :-</b>
     <p>In my third file, I only created a JSON model and set data and fetched data to it</p>
   <hr>
+
+<b>-->z4_Aggregation :-</b>
+  <p>It is use for repetitively binding.</p>
+  <p>There are mainly two Aggregation</p>
+  1. Column Aggregation. <br>
+  2. Row Aggregation.
     
 
 
