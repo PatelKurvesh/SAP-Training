@@ -1,0 +1,87 @@
+<mvc:View controllerName="Practicez5_Expression_binding.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:table="sap.ui.table">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<form:SimpleForm >
+						<form:content>
+							<Label text="Student No" ></Label>
+							<Input id="sNo" value="{/sData/sNo}"></Input>
+							
+							<Label text="Student Name"></Label>
+							<Input id="sName" value="{/sData/sName}"></Input>
+							
+							<Label text="Student Branch"></Label>
+							<Input id="sBranch" value="{/sData/sBranch}"></Input>
+							
+							<Label text="Student CGPA"></Label>
+							<Input id="sCGPA" value="{/sData/sCGPA}"  ></Input>
+							
+							<Label text="Student Pass/Fail"></Label>
+							<Input id="sStatus" value="{= ${/sData/sCGPA} > 5.00 ? 'Pass':'Fail'}"></Input>
+							<!--<CheckBox id="sStatus" selected="{/sData/sStatus}" enabled="{= ${/sData/sCGPA} > 5.00 ? true:false}"></CheckBox>
+							in enabled we have only two value true or false if you need message then use value and ''-->
+							
+							
+							
+							<Label text="Student Placement"></Label>
+							<CheckBox id="sPlaced" selected="{/sData/sPlaced}"></CheckBox>
+							
+							<Button text="Submit" press="onSubmit"></Button>
+							<Button text="Clear" press="onClear"></Button>
+						</form:content>
+					</form:SimpleForm>
+					
+					<table:Table rows="{/studentData}">
+						<table:columns>
+							
+							<table:Column>
+								<Label text="Student No"></Label>
+								<table:template>
+									<Input value="{sNo}"></Input>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Student Name"></Label>
+								<table:template>
+									<Input value="{sName}"></Input>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Student Branch"></Label>
+								<table:template>
+									<Input value="{sBranch}"></Input>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Student CGPA"></Label>
+								<table:template>
+									<Input value="{sCGPA}"></Input>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Student Status"></Label>
+								<table:template>
+									<Input value="{sStatus}"></Input>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Placement"></Label>
+								<table:template>
+									<CheckBox selected="{sPlaced}"></CheckBox>
+								</table:template>
+							</table:Column>
+							
+						</table:columns>
+					</table:Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

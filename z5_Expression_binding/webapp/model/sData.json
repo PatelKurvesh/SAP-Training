@@ -1,0 +1,36 @@
+{
+	"sData":
+			{
+			"sNo":2037,
+			"sName":"Kurvesh",
+			"sBranch":"CEIT-CE",
+			"sCGPA":8.67,
+			"sStatus":false,
+			"sPlaced":true
+	
+		},
+	"studentData":[
+		{
+			"sNo":2037,
+			"sName":"Kurvesh",
+			"sBranch":"CEIT-CE",
+			"sCGPA":8.67,
+			"sStatus":true,
+			"sPlaced":true
+		},{
+			"sNo":2011,
+			"sName":"Hirwa",
+			"sBranch":"CEIT-IT",
+			"sCGPA":9.67,
+			"sStatus":true,
+			"sPlaced":true
+		},{
+			"sNo":2035,
+			"sName":"Jay",
+			"sBranch":"CEIT-AI",
+			"sCGPA":6.07,
+			"sStatus":true,
+			"sPlaced":true
+		}
+		]
+}
