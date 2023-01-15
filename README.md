@@ -46,5 +46,11 @@ Password:- admin
 
 <hr>
 
+<b>-->z6_Element_binding :-</b>
+  <p>Element binding is useful for containers and layouts containing other controls.</p>
+  <p>element-binding allows the relative binding of all children with respect to a parent.</p>
+
+<hr>
+
 
 
