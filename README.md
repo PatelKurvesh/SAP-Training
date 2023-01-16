@@ -52,5 +52,10 @@ Password:- admin
 
 <hr>
 
+<b>-->z7_XML_Model :-</b>
+  <p>XMLModel is a client side model function same as JSONModel only syntax different</p>
+
+<hr>
+
 
 
