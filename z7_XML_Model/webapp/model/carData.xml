@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<data>
+	<cData>
+		<company>Suzuki</company>
+		<cName>Baleno</cName>
+		<cColor>white</cColor>
+		<cPrice>7,40,000</cPrice>
+	</cData>
+
+	<carData>
+		<row>
+			<company>Suzuki</company>
+			<cName>Baleno</cName>
+			<cColor>white</cColor>
+			<cPrice>7,40,000</cPrice>
+		</row>
+		<row>
+			<company>Tata</company>
+			<cName>Nano</cName>
+			<cColor>white</cColor>
+			<cPrice>1,40,000</cPrice>
+		</row>
+	</carData>
+
+</data>
