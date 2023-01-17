@@ -57,5 +57,10 @@ Password:- admin
 
 <hr>
 
+<b>-->z8_ResourceModel :-</b>
+  <p>Resource model in sap in used for internationalization. It is use for app in different country in different language.</p>
+
+<hr>
+
 
 
