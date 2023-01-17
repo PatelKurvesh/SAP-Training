@@ -1,0 +1,23 @@
+<mvc:View controllerName="Practicez8_ResourceModel.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:table="sap.ui.table">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<form:SimpleForm>
+						<form:content>
+							<Label text="{i18n>LBL_fName}"></Label>
+							<Input></Input>
+							<Label text="{i18n>LBL_mName}"></Label>
+							<Input></Input>
+							<Label text="{i18n>LBL_lName}"></Label>
+							<Input></Input>
+							<Label text="{i18n>LBL_no}"></Label>
+							<Input></Input>
+						</form:content>
+					</form:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
