@@ -67,7 +67,7 @@ Password:- admin
   <p>Only work in property binding</p>
   <p>Syntax :-</p>
   for Single:- 	"{path: 'cName',formatter: '.formatter.makeItUpperCase'}" 
-  \n
+  <br>
   for Double:- "{parts:[{path:'cColor'},{path:'Other'}],formatter: '.formatter.makeItUpperCase'}"
 
 <hr>
