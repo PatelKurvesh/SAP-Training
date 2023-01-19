@@ -66,7 +66,8 @@ Password:- admin
   <p>Formatter is function which is used to modify or manipulate the data before the data binds to the ui control</p>
   <p>Only work in property binding</p>
   <p>Syntax :-</p>
-  for Single:- 	"{path: 'cName',formatter: '.formatter.makeItUpperCase'}"
+  for Single:- 	"{path: 'cName',formatter: '.formatter.makeItUpperCase'}" 
+  \n
   for Double:- "{parts:[{path:'cColor'},{path:'Other'}],formatter: '.formatter.makeItUpperCase'}"
 
 <hr>
