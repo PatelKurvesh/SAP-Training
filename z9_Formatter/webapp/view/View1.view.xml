@@ -1,0 +1,67 @@
+<mvc:View controllerName="Practicez9_Formatter.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:table="sap.ui.table">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<form:SimpleForm id="car" >
+						<form:content>
+							<Label text="Company"></Label>
+							<Input id="com" value="{company}"></Input>
+							
+							<Label text="Car Name"></Label>
+							<Input id="cName" value="{cName}"></Input>
+							
+							<Label text="Car Color"></Label>
+							<Input id="cColor" value="{cColor}"></Input>
+							
+							<Label text="Car Price"></Label>
+							<Input id="cPrice" value="{cPrice}"></Input>
+							
+							<Button text="Submit" press="onSubmit"></Button>
+							<Button text="Clear" press="onClear"></Button>
+						</form:content>
+					</form:SimpleForm>
+					
+					<table:Table rows="{/carData}" selectionMode="Single" rowSelectionChange="onRowSelect">
+						<table:columns>
+							
+							<table:Column>
+								<Label text="Company"></Label>
+								<table:template>
+									<Input value="{company}" ></Input>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Car Name"></Label>
+								<table:template>
+									<Input value="{
+						path: 'cName',
+						formatter: '.formatter.makeItUpperCase'
+					}"></Input>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Car Color"></Label>
+								<table:template>
+									<!--<Input value="{parts:[{path:'cColor'},{path:'Other'}],formatter: '.formatter.makeItUpperCase'}"></Input>-->
+									<Input value="{cColor},{Other}"></Input>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Car Price"></Label>
+								<table:template>
+									<Input value="{cPrice}"></Input>
+								</table:template>
+							</table:Column>
+							
+						</table:columns>
+					</table:Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

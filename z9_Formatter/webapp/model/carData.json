@@ -1,0 +1,23 @@
+{
+	"cData":{
+		"company":"Suzuki",
+		"cName":"Baleno",
+		"cColor":"white",
+		"cPrice":"7,40,000"
+	},
+	"carData":[
+		{
+			"company":"Suzuki",
+			"cName":"Baleno",
+			"cColor":"white",
+			"cPrice":"7,40,000",
+			"Other":"Black,Gray"
+		},{
+			"company":"Tata",
+			"cName":"Nano",
+			"cColor":"Black",
+			"cPrice":"1,40,000",
+			"Other":"Black,Gray"
+		}
+		]
+}
