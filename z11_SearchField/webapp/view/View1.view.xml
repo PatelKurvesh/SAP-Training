@@ -1,0 +1,22 @@
+<mvc:View controllerName="Practicez11_SearchField.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<SearchField search="onSearchItem"></SearchField>
+					<List id="fruits" items="{/fruits}">
+						<ObjectListItem 
+						title="{name}"
+						number="{price}"
+						>
+							<ObjectAttribute text="{taste}"></ObjectAttribute>
+							<ObjectAttribute text="{color}"></ObjectAttribute>
+							
+						</ObjectListItem>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
