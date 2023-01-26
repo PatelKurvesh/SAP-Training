@@ -91,4 +91,6 @@ Password:- admin
 <hr>
 
 <b>-->z12_Fragment :-</b>
-  <p>Fragment is a one type of pop op box. They use <Dialog> tag. 
+  <p>Fragment is a one type of pop op box. They use <Dialog> tag. </p>
+
+<hr>
