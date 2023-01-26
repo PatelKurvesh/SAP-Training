@@ -1,0 +1,20 @@
+<mvc:View controllerName="Practicez12_Fragment.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Button text="Filter" icon="sap-icon://add-filter" press="onOpenFrag"></Button>
+					<List id="fruits" items="{/fruits}">
+						<ObjectListItem 
+						title="{name}">
+							<ObjectAttribute text="{color}"></ObjectAttribute>
+							<ObjectAttribute text="{taste}"></ObjectAttribute>
+							
+						</ObjectListItem>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

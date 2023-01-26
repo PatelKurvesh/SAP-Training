@@ -1,0 +1,26 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+
+	<Dialog>
+		
+	<!--	<List items="{/fruits}">-->
+	<!--	<ObjectListItem>-->
+	<!--		<ObjectAttribute text="{name}"></ObjectAttribute>-->
+	<!--	</ObjectListItem>-->
+	<!--</List>-->
+	
+		<Text text="Hello, Welcome To Filter"></Text>
+		
+
+		
+		<!--<Button id="lt50" text="LT50"></Button>-->
+		<!--<Button id="gt50" text="GT50"></Button>-->
+		<!--<Button id="eq50" text="EQ50"></Button>-->
+		<beginButton>
+			<Button text="ok" press="onDialogClose"></Button>
+		</beginButton>
+	</Dialog>
+	
+	
+	
+
+</core:FragmentDefinition>
