@@ -1,0 +1,24 @@
+<mvc:View controllerName="Practicez13_Navigation.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App >
+		<pages>
+			<Page title="{i18n>title}" showNavButton="true">
+				<headerContent>
+					<Button icon="sap-icon://action" tooltip="Next" press="onNext"></Button>
+				</headerContent>             
+				<content>
+					<List id="lFruits" items="{/fruits}" itemPress="onItemPress">
+						
+						<ObjectListItem type="Navigation"
+						title="{name}" number="{price}">
+							<ObjectAttribute text="{color}"></ObjectAttribute>
+							<ObjectAttribute text="{taste}"></ObjectAttribute>
+							
+						</ObjectListItem>
+						
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
