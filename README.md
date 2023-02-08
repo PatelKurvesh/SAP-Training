@@ -103,7 +103,7 @@ Password:- admin
 <b>-->z14_SplitApp :-</b>
   <p>SplitApp in SAP UI5 is a layout control that allows you to divide the screen into two parts, a master and a detail area. To create a SplitApp in SAP UI5, you can use the following steps:</p>
   1)Creat a root view and set <pre>
-  <SplitApp> </SplitApp></pre>
+  SplitApp</pre>
 
   2)in root view controller
   <pre>	onInit: function() {
