@@ -99,3 +99,32 @@ Password:- admin
   <p>need parant view for all View.</p>
 
 <hr>
+
+<b>-->z14_SplitApp :-</b>
+  <p>SplitApp in SAP UI5 is a layout control that allows you to divide the screen into two parts, a master and a detail area. To create a SplitApp in SAP UI5, you can use the following steps:</p>
+  1)Creat a root view and set <SplitApp> </SplitApp>
+  2)in root view controller
+  <pre>	onInit: function() {
+				
+				var oApp = this.getView().byId("idApp");
+				
+				var oView1 = new sap.ui.view({
+					id:"idView1",
+					viewName:"Practicez14_SplitApp.view.View1",
+					type:"XML"
+				});
+				var oView2 = new sap.ui.view({
+					id:"idView2",
+					viewName:"Practicez14_SplitApp.view.View2",
+					type:"XML"
+				});
+				oApp.addMasterPage(oView1);
+				oApp.addDetailPage(oView2);
+				
+				
+			
+				
+		
+			}</pre>
+
+<hr>
