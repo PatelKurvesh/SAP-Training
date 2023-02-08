@@ -1,0 +1,56 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:form="sap.ui.layout.form" controllerName="Practicez14_SplitApp.controller.View2">
+	
+			<Page title="Company Info">
+				<content>
+					
+					<ObjectHeader  
+					
+					icon="{logo}" iconDensityAware="false" title="{name}" class="sapUiResponsivePadding--header" responsive="true">
+						<statuses>
+							<ObjectStatus text="{stock}" state="Success"/>
+						</statuses>
+						<ObjectAttribute text="{owner}"/>
+						<ObjectAttribute text="{mail}"/>
+						
+					</ObjectHeader>
+					
+					<IconTabBar>
+						<items>
+							<IconTabFilter icon="sap-icon://feeder-arrow"/>
+							
+							<IconTabFilter text="Info" icon="sap-icon://hint">
+								<content>
+									<form:SimpleForm>
+										<core:Title class="title" text="Information About Company"/>
+										<Label class="title" text="Description"/>
+										
+										<Text class="Dec" text="{detail}"/>
+									</form:SimpleForm>
+								</content>
+							</IconTabFilter>
+							
+							<IconTabFilter text="Model" icon="sap-icon://iphone">
+								<List class="myText" >
+									<ObjectListItem press="List2" title="{1n}" type="Active" icon="{1p}" number="{storage}">
+									</ObjectListItem>
+									<ObjectListItem press="List2" title="{2n}" type="Active" icon="{2p}" number="{storage}">
+									</ObjectListItem>
+									<ObjectListItem press="List2" title="{3n}" type="Active" icon="{3p}" number="{storage}">
+									</ObjectListItem>
+									<ObjectListItem press="List2" title="{4n}" type="Active" icon="{4p}" number="{storage}">
+									</ObjectListItem>
+									<ObjectListItem press="List2" title="{5n}" type="Active" icon="{5p}" number="{storage}">
+									</ObjectListItem>
+									<ObjectListItem press="List2" title="{6n}" type="Active" icon="{6p}" number="{storage}">
+									</ObjectListItem>
+								</List>
+								
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+					
+				</content>
+			</Page>
+
+
+</mvc:View>

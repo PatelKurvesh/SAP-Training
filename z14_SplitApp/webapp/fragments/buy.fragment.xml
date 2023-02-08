@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	
+	<Dialog>
+	<Label text="Thank You Sir, For visiting us but our server is Down"></Label>
+	<beginButton>
+			<Button text="Try After Some Time" press="onDialogClose"></Button>
+		</beginButton>
+	</Dialog>
+</core:FragmentDefinition>
