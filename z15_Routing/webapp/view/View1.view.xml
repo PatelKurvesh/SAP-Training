@@ -1,0 +1,61 @@
+<mvc:View controllerName="Practicez15_Routing.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:table="sap.ui.table">
+	
+			<Page title="{i18n>title}">
+				<headerContent>
+					<Button icon="sap-icon://action" tooltip="Next" press="onNext"></Button>
+				</headerContent> 
+				<content>
+					
+					<table:Table rows="{/Student}" selectionMode="Single" rowSelectionChange="onRowSelect">
+						<table:columns>
+							
+							<!--<table:Column>-->
+							<!--	<Label text="Sr No"></Label>-->
+							<!--	<table:template>-->
+							<!--		<Text text="{EnNo}"></Text>-->
+							<!--	</table:template>-->
+							<!--</table:Column>-->
+							
+							<table:Column>
+								<Label text="Enrollment No"></Label>
+								<table:template>
+									<Text text="{no}"></Text>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Student Name"></Label>
+								<table:template>
+									<Text text="{name}"></Text>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Collage Name"></Label>
+								<table:template>
+									<Text text="{college_name}"></Text>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Course Name"></Label>
+								<table:template>
+									<Text text="{course_name}"></Text>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Current Sem"></Label>
+								<table:template>
+									<Text text="{current_semester}"></Text>
+								</table:template>
+							</table:Column>
+							
+							
+						</table:columns>
+					</table:Table>
+				</content>
+			</Page>
+		
+</mvc:View>

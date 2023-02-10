@@ -1,0 +1,7 @@
+/* Enter your custom styles here */
+.btn1 .sapMBtnDefault .sapMBtnHoverable .sapMBtnInner .sapMBtnText .sapMFocusable{
+	border:2px solid white;
+}
+#__button0-inner {
+	border:2px solid white;
+}

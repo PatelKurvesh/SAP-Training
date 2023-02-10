@@ -1,0 +1,43 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Practicez15_Routing.controller.View2"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:form="sap.ui.layout.form">
+
+			<Page title="View 2"  showNavButton="true" navButtonPress="onBack">
+				<content>
+					<form:SimpleForm >
+						
+						<!--<Label text="Sr No"></Label>-->
+						<!--<Input id="in6" value="{EnNo}"></Input>-->
+						
+						<Label text="Enrollment No"></Label>
+						<Input id="in1" value="{no}"></Input>
+						
+						<Label text="Student Name"></Label>
+						<Input id="in2" value="{name}"></Input>
+						
+						<Label text="Collage Name"></Label>
+						<Input id="in3" value="{college_name}"></Input>
+						
+						<Label text="Course Name"></Label>
+						<Input id="in4" value="{course_name}"></Input>
+						
+						<Label text="Current Sem"></Label>
+						<Input id="in5" value="{current_semester}"></Input>
+						
+					</form:SimpleForm>
+					
+					
+				</content>
+				
+				<footer>
+					<Toolbar>
+						<content>
+							<ToolbarSpacer/>
+							
+							<Button text="Back" class="btn1" press="onBack"/>
+							<Button text="Save" type="Accept" press="onSavePress"/>
+							<Button text="Clear" type="Reject" press="onClearPress"/>
+						</content>
+					</Toolbar>
+				</footer>
+			</Page>
+</mvc:View>

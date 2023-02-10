@@ -1,0 +1,52 @@
+{
+	"Student": [{
+		"enNo":"0",
+		"no":"2001",
+		"name": "John Smith",
+		"college_name": "Stanford University",
+		"course_name": "Computer Science",
+		"current_semester": "5"
+	}, {
+		"enNo":"1",
+		"no":"2002",
+		"name": "Jane Doe",
+		"college_name": "Harvard University",
+		"course_name": "Mathematics",
+		"current_semester": "3"
+	}, {
+		"enNo":"2",
+		"no":"2003",
+		"name": "Bob Johnson",
+		"college_name": "University of California, Berkeley",
+		"course_name": "Electrical Engineering",
+		"current_semester": "4"
+	}, {
+		"enNo":"3",
+		"no":"2004",
+		"name": "Samantha Williams",
+		"college_name": "Massachusetts Institute of Technology",
+		"course_name": "Physics",
+		"current_semester": "2"
+	}, {
+		"enNo":"4",
+		"no":"2005",
+		"name": "Michael Brown",
+		"college_name": "California Institute of Technology",
+		"course_name": "Chemistry",
+		"current_semester": "1"
+	}, {
+		"enNo":"5",
+		"no":"2006",
+		"name": "Emily Davis",
+		"college_name": "Princeton University",
+		"course_name": "Biology",
+		"current_semester": "3"
+	}, {
+		"enNo":"6",
+		"no":"2007",
+		"name": "Jacob Miller",
+		"college_name": "University of Chicago",
+		"course_name": "Economics",
+		"current_semester": "4"
+	}]
+}

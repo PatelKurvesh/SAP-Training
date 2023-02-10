@@ -1,0 +1,129 @@
+{
+	"_version": "1.7.0",
+	"sap.app": {
+		"id": "Practicez15_Routing",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_hcb", "sap_belize"]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "Practicez15_Routing.view.App",
+			"type": "XML",
+			"id":"idApp",
+			"async" : true
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {},
+				"sap.ushell": {},
+				"sap.collaboration": {},
+				"sap.ui.comp": {},
+				"sap.uxap": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "Practicez15_Routing.i18n.i18n"
+				}
+			},
+			"":{
+				"type":"sap.ui.model.json.JSONModel",
+				"uri" : "model/student.json"
+			}
+			
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "Practicez15_Routing.view",
+				"controlId": "idApp",
+				"async" : true,
+				"controlAggregation": "pages",
+				"clearControlAggregation": false
+			},
+			"routes": [{
+				"name": "View1",
+				"target": ["View1"],
+				"pattern" : ""
+				
+			}, {
+				"name": "View2",
+				"target": ["View2"],
+				"pattern" : "view2/{EnNo}" 
+				
+			},
+			{
+				"name": "NewRecord",
+				"target": ["NewRecord"],
+				"pattern" : "Add Record" 
+				
+			}],
+			"targets": {
+				"View1": {
+					"viewType": "XML",
+					"transition": "flip",
+					"viewName": "View1",
+					"viewId": "View1",
+					"clearControlAggregation": false
+				},
+				"View2": {
+					"viewType": "XML",
+					"transition": "flip",
+					"viewName": "View2",
+					"viewId": "View2",
+					"clearControlAggregation": false
+				},
+				"NewRecord": {
+					"viewType": "XML",
+					"transition": "flip",
+					"viewName": "View2",
+					"viewId": "View2",
+					"clearControlAggregation": false
+				}
+				
+				
+			}
+		}
+	}
+}
